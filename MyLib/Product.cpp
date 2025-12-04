@@ -13,5 +13,6 @@ double Product::getPrice() const {
 }
 
 void Product::displayInfo() const {
-    std::cout << "Товар: " << name << ", Цена: " << price << " руб." << std::endl;
+    std::cout << "Товар: " << name << " Цена: " << price << " руб" << std::endl;
+
 }
