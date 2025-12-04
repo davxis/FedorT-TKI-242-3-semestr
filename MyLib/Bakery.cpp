@@ -15,7 +15,7 @@ void Bakery::addStore(const std::shared_ptr<Store>& store) {
 }
 
 void Bakery::displayAssortment() const {
-    std::cout << "=== Ассортимент хлебопекарни ===" << std::endl;
+    std::cout << " Ассортимент хлебопекарни " << std::endl;
     for (const auto& product : assortment) {
         product->displayInfo();
     }
@@ -23,4 +23,5 @@ void Bakery::displayAssortment() const {
 
 int Bakery::getProducedQuantity(const std::string& productName) const {
     return 50;
+
 }
