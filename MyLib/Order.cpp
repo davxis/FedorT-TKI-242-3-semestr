@@ -20,6 +20,7 @@ double Order::getTotalAmount() const {
 
 void Order::displayInfo() const {
     std::cout << "Товар: " << product->getName()
-              << ", Количество: " << quantity
-              << ", Сумма: " << totalPrice << " руб." << std::endl;
+              << " Количество: " << quantity
+              << " Сумма: " << totalPrice << " руб" << std::endl;
+
 }
