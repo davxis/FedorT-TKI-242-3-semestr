@@ -18,11 +18,12 @@ const std::vector<std::shared_ptr<Order>>& Store::getOrders() const {
 }
 
 void Store::displayOrderSummary() const {
-    std::cout << "=== Заказы магазина '" << name << "' ===" << std::endl;
+    std::cout << "=== Заказы магазина " << name << "" << std::endl;
     double totalSum = 0.0;
     for (const auto& order : orders) {
         order->displayInfo();
         totalSum += order->getTotalAmount();
     }
-    std::cout << "Общая сумма заказа: " << std::fixed << std::setprecision(2) << totalSum << " руб." << std::endl;
+    std::cout << "Общая сумма заказа: " << std::fixed << std::setprecision(2) << totalSum << " руб" << std::endl;
+
 }
