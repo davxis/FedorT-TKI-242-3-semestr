@@ -12,11 +12,12 @@ private:
     double totalPrice;
 
 public:
-    Order(const std::shared_ptr<Product>& product, int quantity);
+    Order(const std::shared_ptr<Product>& product, const int quantity);
 
     std::shared_ptr<Product> getProduct() const;
     int getQuantity() const;
     double getTotalAmount() const;
 
     void displayInfo() const;
+
 };
